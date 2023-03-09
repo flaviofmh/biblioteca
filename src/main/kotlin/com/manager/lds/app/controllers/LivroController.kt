@@ -1,6 +1,5 @@
 package com.manager.lds.app.controllers
 
-import com.manager.lds.domain.models.Livro
 import com.manager.lds.domain.models.LivroDTO
 import com.manager.lds.domain.services.LivroService
 import com.manager.lds.infrastruct.mappers.toEntity

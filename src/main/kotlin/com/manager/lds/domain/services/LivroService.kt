@@ -10,6 +10,13 @@ class LivroService(@Autowired var livroRepository: LivroRepository) {
 
     fun listarTodos() = livroRepository.findAll();
 
-    fun salvarLivro(livro: Livro) = livroRepository.save(livro);
+    fun salvarLivro(livro: Livro) : Livro {
+
+        if (livro.categoria != null) {
+            throw Exception()
+        }
+
+        return livroRepository.save(livro)
+    }
 
 }
